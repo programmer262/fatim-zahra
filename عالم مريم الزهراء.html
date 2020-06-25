@@ -4,16 +4,7 @@
 <title>عالم مريم الزهراء</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    #myProgress {
-  width: 100%;
-  background-color: grey;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
-}
+ 
     iframe{cursor:wait}
 body {
   margin: 0;
@@ -23,7 +14,7 @@ body {
 }
 
 .header {
-  background-color: purple;
+  background-image:('https://scontent.fcmn2-1.fna.fbcdn.net/v/t1.0-9/s960x960/102315742_139233427789531_2546219545515675533_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=MJeAKUkXbwQAX_oT7GG&_nc_ht=scontent.fcmn2-1.fna&_nc_tp=7&oh=0885fe46bb9c9a00330c40d9ad80f15a&oe=5F19B13C')
   padding: 30px;
   text-align: center;
      animation-name:header;
@@ -132,36 +123,7 @@ body {
   alert('welcome to عالم مريم الزهراء')
   var user = prompt("Please enter your name");
 alert('welcome to عالم مريم الزهراء\n'+user);
-   var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-}
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 </script>
 
 </body>
