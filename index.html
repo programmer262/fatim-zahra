@@ -71,7 +71,11 @@ body {
   padding-top: 60px;
 }
 .video{font-size:60%;}
-   
+   .contact{
+ background-color:black;
+ }
+ input{
+  box-shadow:14px 12px 20px 0 grey;}
 </style>
 </head>
 <body>
@@ -127,8 +131,15 @@ body {
 <iframe width="100%" height="483" src="https://www.youtube.com/embed/aWz-e30IZgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
-
+<div class="contact">
+<h1><span>Contact Me</span></h1>
+<form>
+  <input name="name" type="text" /><br/>
+  <input name="email" type="email" /><br/>
+  <textarea name="message"></textarea>
+  <input type="submit" value="SEND" class="submit" />
 </form>
+ </div>
 <script>
   alert('welcome to عالم مريم الزهراء')
   var user = prompt("Please enter your name");
